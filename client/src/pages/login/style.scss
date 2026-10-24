@@ -1,0 +1,114 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #0b0c10;
+  color: #fff;
+
+  .auth-card-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .auth-card {
+    background: #151822;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 36px 32px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+
+      label {
+        display: block;
+        font-size: 14px;
+        color: #cbd5e1;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        background: #0d0f15;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: #fff;
+        padding: 12px 14px;
+        border-radius: 6px;
+        font-size: 15px;
+        outline: none;
+        transition: border-color 0.2s;
+
+        &:focus {
+          border-color: #e50914;
+        }
+      }
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #e50914;
+      color: #fff;
+      border: none;
+      padding: 13px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+
+      &:hover:not(:disabled) {
+        background: #b80710;
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+
+    .auth-footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+      text-align: center;
+
+      a {
+        color: #e50914;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+
+    .admin-switch {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #64748b;
+      text-align: center;
+
+      a {
+        color: #f59e0b;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+  }
+}

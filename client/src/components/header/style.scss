@@ -1,0 +1,109 @@
+.header-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(18, 18, 24, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 24px;
+
+  .nav-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e50914;
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    .brand-icon {
+      font-size: 28px;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    .admin-link {
+      color: #f59e0b;
+      font-weight: 600;
+      &:hover {
+        color: #fbbf24;
+      }
+    }
+
+    .logout-btn {
+      background: transparent;
+      border: 1px solid rgba(239, 68, 68, 0.5);
+      color: #ef4444;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+
+      &:hover {
+        background: #ef4444;
+        color: #fff;
+      }
+    }
+
+    .auth-btns {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .login-link {
+        color: #fff;
+      }
+
+      .register-link {
+        background: #e50914;
+        color: #fff;
+        padding: 6px 16px;
+        border-radius: 6px;
+        &:hover {
+          background: #b80710;
+        }
+      }
+
+      .admin-pill {
+        background: rgba(245, 158, 11, 0.15);
+        color: #fbbf24;
+        border: 1px solid rgba(245, 158, 11, 0.3);
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 13px;
+      }
+    }
+  }
+}
